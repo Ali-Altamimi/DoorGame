@@ -3,11 +3,10 @@ from random import randint
 
 
 class DoorGame:
-    
+
     def __init__(self, number_of_doors):
         self.list_of_doors = [Door() for i in range(number_of_doors)]
         self.list_of_doors[randint(0, 2)].set_is_car(True)
-
 
     def play(self):
         self.select_door()
@@ -42,4 +41,3 @@ class DoorGame:
             return True
         else:
             return False
-
