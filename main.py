@@ -1,10 +1,12 @@
 from door_game import DoorGame
-loop = 1_000_000
 
+LOOP = 100_000
+DOORS = 3
 wins = 0
-for i in range(loop):
-    game = DoorGame()
-    if game.play():
-        wins = wins+1
 
-print((wins/loop)*100)
+for i in range(LOOP):
+    game = DoorGame(DOORS)
+    if game.play():
+        wins = wins + 1
+percentage = (wins / LOOP) * 100
+print(f'{percentage:.2f}%')
