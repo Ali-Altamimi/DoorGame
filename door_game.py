@@ -3,8 +3,6 @@ from random import randint
 
 
 class DoorGame:
-    global doors
-    global selected_door
 
     def __init__(self, number_of_doors=3):
         self.selected_door = 0
@@ -44,9 +42,8 @@ class DoorGame:
             self.selected_door = random_number
 
     def results(self):
-        if self.list_of_doors[0].get_is_selected() and self.list_of_doors[0].get_is_car():
-            return True
-        elif self.list_of_doors[1].get_is_selected() and self.list_of_doors[1].get_is_car():
+        if self.list_of_doors[self.selected_door].get_is_selected() and self.list_of_doors[
+            self.selected_door].get_is_car():
             return True
         else:
             return False
