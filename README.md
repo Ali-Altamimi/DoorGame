@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Ali-Altamimi/DoorGame">
-    <img src="https://brilliant-staff-media.s3-us-west-2.amazonaws.com/tiffany-wang/gWotbuEdYC.png" alt="💻 Logo">
+    <img style='width:350px' src="https://brilliant-staff-media.s3-us-west-2.amazonaws.com/tiffany-wang/gWotbuEdYC.png" alt="💻 Logo">
   </a>
 
   <h3 align="center">The Three Doors Game</h3>
